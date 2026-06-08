@@ -1,0 +1,60 @@
+** sch_path: /home/boudi/PSESI/tb_layout.sch
+**.subckt tb_layout
+Vindc Vmoins net1 0.6 AC 0 0
+Vd vd GND 0 AC 1 0
+E1 net1 GND vd GND 0.5
+Vindc1 Vplus net2 0.6 AC 0 0
+E2 net2 GND vd GND -0.5
+VDD VDD GND 1.2
+x1 VDD Vmoins Vplus Vout GND OTA
+**** begin user architecture code
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerCAP.lib cap_typ
+.include /home/boudi/PSESI/TOP.spice
+XTOP Vmoins Vplus GNG VDD Vout_layout TOP
+
+
+
+.include tb_layout.save
+.param temp=27
+.control
+options methode=trap maxord=6
+save all
+op
+write tb_layout.raw
+set appendwrite
+*dc V 0 1.2 0.001
+*dc vd -0.6 0.6 0.001
+ac dec 100 1 10G
+write tb_layout.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  OTA.sym # of pins=5
+** sym_path: /home/boudi/PSESI/OTA.sym
+** sch_path: /home/boudi/PSESI/OTA.sch
+.subckt OTA VDD Vmoins Vplus Vout GND
+*.ipin Vmoins
+*.ipin Vplus
+*.ipin VDD
+*.ipin GND
+*.opin Vout
+XM3 net1 net4 GND GND sg13_lv_nmos w=2.5u l=0.5u ng=1
+XM2.1 net2 Vmoins net1 GND sg13_lv_nmos w=2.5u l=0.5u ng=2
+XM2.2 net3 Vplus net1 GND sg13_lv_nmos w=2.5u l=0.5u ng=2
+XM1.1 net2 net2 VDD VDD sg13_lv_pmos w=2.5u l=0.5u ng=1
+XM1.2 net3 net2 VDD VDD sg13_lv_pmos w=2.5u l=0.5u ng=1
+XM4 Vout net4 GND GND sg13_lv_nmos w=3.0u l=1.6u ng=2
+XM5 Vout net3 VDD VDD sg13_lv_pmos w=4.0u l=0.5u ng=2
+XC2 net3 Vout cap_cmim w=10.0e-6 l=10.0e-6
+XM1 net4 net4 GND GND sg13_lv_nmos w=8.0u l=0.5u ng=4
+XM2 net4 net4 VDD VDD sg13_lv_pmos w=1.8u l=0.5u ng=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

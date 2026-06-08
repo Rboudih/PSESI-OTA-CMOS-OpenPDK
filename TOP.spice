@@ -1,0 +1,175 @@
+* NGSPICE file created from TOP.ext - technology: ihp-sg13g2
+
+.subckt pmos$2 a_68_n36# a_344_0# w_n62_n62# a_244_n36# sub a_168_0# a_0_0#
+X0 a_344_0# a_244_n36# a_168_0# w_n62_n62# sg13_lv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.5u
+X1 a_168_0# a_68_n36# a_0_0# w_n62_n62# sg13_lv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.5u
+C0 a_344_0# a_168_0# 0.0949f
+C1 w_n62_n62# a_68_n36# 0.12416f
+C2 a_168_0# w_n62_n62# 0.02432f
+C3 a_168_0# a_68_n36# 0.03731f
+C4 a_344_0# a_244_n36# 0.03731f
+C5 a_244_n36# w_n62_n62# 0.12416f
+C6 a_244_n36# a_68_n36# 0.01172f
+C7 a_0_0# w_n62_n62# 0.02485f
+C8 a_168_0# a_244_n36# 0.03731f
+C9 a_0_0# a_68_n36# 0.03731f
+C10 a_344_0# w_n62_n62# 0.02485f
+C11 a_168_0# a_0_0# 0.0949f
+C12 a_344_0# sub 0.07701f
+C13 a_168_0# sub 0.01094f
+C14 a_0_0# sub 0.07701f
+C15 a_244_n36# sub 0.04556f
+C16 a_68_n36# sub 0.04556f
+.ends
+
+.subckt nmos$3 a_68_n36# a_344_0# a_244_n36# sub a_520_0# a_596_n36# a_420_n36# a_168_0#
++ a_0_0# a_696_0#
+X0 a_520_0# a_420_n36# a_344_0# sub sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X1 a_696_0# a_596_n36# a_520_0# sub sg13_lv_nmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.5u
+X2 a_168_0# a_68_n36# a_0_0# sub sg13_lv_nmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.5u
+X3 a_344_0# a_244_n36# a_168_0# sub sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+C0 a_168_0# a_0_0# 0.0949f
+C1 a_68_n36# a_244_n36# 0.01172f
+C2 a_168_0# a_344_0# 0.0949f
+C3 a_0_0# a_68_n36# 0.03731f
+C4 a_344_0# a_244_n36# 0.03731f
+C5 a_420_n36# a_596_n36# 0.01172f
+C6 a_520_0# a_696_0# 0.0949f
+C7 a_520_0# a_344_0# 0.0949f
+C8 a_420_n36# a_244_n36# 0.01172f
+C9 a_520_0# a_420_n36# 0.03731f
+C10 a_344_0# a_420_n36# 0.03731f
+C11 a_168_0# a_68_n36# 0.03731f
+C12 a_168_0# a_244_n36# 0.03731f
+C13 a_520_0# a_596_n36# 0.03731f
+C14 a_696_0# a_596_n36# 0.03731f
+C15 a_696_0# sub 0.08937f
+C16 a_520_0# sub 0.01267f
+C17 a_344_0# sub 0.01267f
+C18 a_168_0# sub 0.01267f
+C19 a_0_0# sub 0.08937f
+C20 a_596_n36# sub 0.16973f
+C21 a_420_n36# sub 0.15968f
+C22 a_244_n36# sub 0.15968f
+C23 a_68_n36# sub 0.16973f
+.ends
+
+.subckt nmos a_388_0# a_464_n36# a_68_n36# sub a_784_0# a_0_0#
+X0 a_784_0# a_464_n36# a_388_0# sub sg13_lv_nmos ad=0.51p pd=3.68u as=0.285p ps=1.88u w=1.5u l=1.6u
+X1 a_388_0# a_68_n36# a_0_0# sub sg13_lv_nmos ad=0.285p pd=1.88u as=0.51p ps=3.68u w=1.5u l=1.6u
+C0 a_0_0# a_388_0# 0.02645f
+C1 a_784_0# a_464_n36# 0.0492f
+C2 a_388_0# a_464_n36# 0.0492f
+C3 a_784_0# a_388_0# 0.02645f
+C4 a_0_0# a_68_n36# 0.0492f
+C5 a_464_n36# a_68_n36# 0.01172f
+C6 a_388_0# a_68_n36# 0.0492f
+C7 a_784_0# sub 0.07019f
+C8 a_388_0# sub 0.01267f
+C9 a_0_0# sub 0.07019f
+C10 a_464_n36# sub 0.42474f
+C11 a_68_n36# sub 0.42474f
+.ends
+
+.subckt nmos$1 a_68_n36# sub a_168_0# a_0_0#
+X0 a_168_0# a_68_n36# a_0_0# sub sg13_lv_nmos ad=0.85p pd=5.68u as=0.85p ps=5.68u w=2.5u l=0.5u
+C0 a_168_0# a_0_0# 0.11863f
+C1 a_168_0# a_68_n36# 0.04663f
+C2 a_0_0# a_68_n36# 0.04663f
+C3 a_168_0# sub 0.10854f
+C4 a_0_0# sub 0.10854f
+C5 a_68_n36# sub 0.20163f
+.ends
+
+.subckt pmos$3 a_68_n36# w_n62_n62# sub a_168_0# a_0_0#
+X0 a_168_0# a_68_n36# a_0_0# w_n62_n62# sg13_lv_pmos ad=0.612p pd=4.28u as=0.612p ps=4.28u w=1.8u l=0.5u
+C0 a_0_0# a_68_n36# 0.03358f
+C1 a_0_0# a_168_0# 0.08541f
+C2 a_168_0# a_68_n36# 0.03358f
+C3 a_0_0# w_n62_n62# 0.0217f
+C4 a_68_n36# w_n62_n62# 0.1181f
+C5 a_168_0# w_n62_n62# 0.0217f
+C6 a_168_0# sub 0.0704f
+C7 a_0_0# sub 0.0704f
+C8 a_68_n36# sub 0.05293f
+.ends
+
+.subckt pmos$1 a_68_n36# w_n62_n62# sub a_168_0# a_0_0#
+X0 a_168_0# a_68_n36# a_0_0# w_n62_n62# sg13_lv_pmos ad=0.85p pd=5.68u as=0.85p ps=5.68u w=2.5u l=0.5u
+C0 a_0_0# a_68_n36# 0.04663f
+C1 a_0_0# a_168_0# 0.11863f
+C2 a_168_0# a_68_n36# 0.04663f
+C3 a_0_0# w_n62_n62# 0.02959f
+C4 a_68_n36# w_n62_n62# 0.1487f
+C5 a_168_0# w_n62_n62# 0.02959f
+C6 a_168_0# sub 0.09352f
+C7 a_0_0# sub 0.09352f
+C8 a_68_n36# sub 0.05293f
+.ends
+
+.subckt nmos$2 a_68_n36# a_344_0# a_244_n36# sub a_168_0# a_0_0#
+X0 a_168_0# a_68_n36# a_0_0# sub sg13_lv_nmos ad=0.2375p pd=1.63u as=0.425p ps=3.18u w=1.25u l=0.5u
+X1 a_344_0# a_244_n36# a_168_0# sub sg13_lv_nmos ad=0.425p pd=3.18u as=0.2375p ps=1.63u w=1.25u l=0.5u
+C0 a_0_0# a_168_0# 0.05931f
+C1 a_344_0# a_244_n36# 0.02332f
+C2 a_168_0# a_244_n36# 0.02332f
+C3 a_344_0# a_168_0# 0.05931f
+C4 a_0_0# a_68_n36# 0.02332f
+C5 a_244_n36# a_68_n36# 0.01172f
+C6 a_168_0# a_68_n36# 0.02332f
+C7 a_344_0# sub 0.06061f
+C8 a_168_0# sub 0.01267f
+C9 a_0_0# sub 0.06061f
+C10 a_244_n36# sub 0.13694f
+C11 a_68_n36# sub 0.13694f
+.ends
+
+.subckt TOP Vmoins Vplus GND VDD Vout
+Xpmos$2_0 a_753_1180# VDD VDD a_753_1180# GND Vout VDD pmos$2
+Xnmos$3_0 a_325_101# a_325_101# a_325_101# GND GND a_325_101# a_325_101# GND a_325_101#
++ a_325_101# nmos$3
+Xnmos_0 Vout a_325_101# a_325_101# GND GND GND nmos
+Xnmos$1_0 a_325_101# GND m1_204_203# GND nmos$1
+Xpmos$3_0 a_325_101# VDD GND a_325_101# VDD pmos$3
+Xpmos$1_0 a_n40_1096# VDD GND VDD a_753_1180# pmos$1
+Xpmos$1_1 a_n40_1096# VDD GND VDD a_n40_1096# pmos$1
+Xnmos$2_0 Vplus m1_204_203# Vplus GND a_753_1180# m1_204_203# nmos$2
+Xnmos$2_1 Vmoins m1_204_203# Vmoins GND a_n40_1096# m1_204_203# nmos$2
+X0 a_753_1180# Vout cap_cmim l=10u w=10u
+C0 Vplus a_753_1180# 0.04473f
+C1 m1_204_203# a_753_1180# 0.07035f
+C2 Vplus Vout 0
+C3 a_n40_1096# a_753_1180# 0.05865f
+C4 m1_204_203# Vout 0
+C5 a_n40_1096# Vout 0
+C6 Vplus VDD 0.01053f
+C7 m1_204_203# VDD 0.00982f
+C8 a_n40_1096# VDD 0.23976f
+C9 Vplus a_325_101# 0.00796f
+C10 m1_204_203# a_325_101# 0.09975f
+C11 Vmoins a_753_1180# 0
+C12 a_n40_1096# a_325_101# 0.09025f
+C13 Vmoins VDD 0.00572f
+C14 Vmoins a_325_101# 0.00502f
+C15 Vout a_753_1180# 1.82125f
+C16 VDD a_753_1180# 0.62922f
+C17 VDD Vout 0.1578f
+C18 a_325_101# a_753_1180# 0.07524f
+C19 a_325_101# Vout 0.06949f
+C20 a_325_101# VDD 0.16261f
+C21 Vplus m1_204_203# 0.15285f
+C22 Vplus a_n40_1096# 0
+C23 m1_204_203# a_n40_1096# 0.11947f
+C24 Vmoins Vplus 0.01818f
+C25 Vmoins m1_204_203# 0.15263f
+C26 Vmoins a_n40_1096# 0.13376f
+C27 Vmoins GND 0.13061f
+C28 m1_204_203# GND -0.0343f
+C29 Vplus GND 0.12799f
+C30 a_n40_1096# GND -0.02959f
+C31 VDD GND -0.05445f
+C32 a_325_101# GND 1.54848f
+C33 Vout GND 2.89532f
+C34 a_753_1180# GND 1.84117f
+.ends
+

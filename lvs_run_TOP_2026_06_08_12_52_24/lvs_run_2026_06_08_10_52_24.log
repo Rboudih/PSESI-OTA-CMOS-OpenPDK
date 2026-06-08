@@ -1,0 +1,16 @@
+08-Jun-2026 12:52:24 | INFO    | Your Klayout version is: KLayout 0.30.2
+08-Jun-2026 12:52:24 | INFO    | Running SG13G2 LVS checks on design /home/boudi/PSESI/layout.gds on cell TOP
+08-Jun-2026 12:52:27 | INFO    | ==============================================================================
+08-Jun-2026 12:52:27 | INFO    | Important Summary
+08-Jun-2026 12:52:27 | INFO    | +------------------+--------------------------------------------------------------+
+08-Jun-2026 12:52:27 | INFO    | | Status           | PASS                                                         |
+08-Jun-2026 12:52:27 | INFO    | | Mode             | COMPARE                                                      |
+08-Jun-2026 12:52:27 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                      |
+08-Jun-2026 12:52:27 | INFO    | | Layout           | layout.gds                                                   |
+08-Jun-2026 12:52:27 | INFO    | | Top Cell         | TOP                                                          |
+08-Jun-2026 12:52:27 | INFO    | | Results Dir      | /home/boudi/PSESI/lvs_run_TOP_2026_06_08_12_52_24            |
+08-Jun-2026 12:52:27 | INFO    | | Warnings         | 0                                                            |
+08-Jun-2026 12:52:27 | INFO    | | Errors           | 0                                                            |
+08-Jun-2026 12:52:27 | INFO    | | Run Time (s)     | 3.241                                                        |
+08-Jun-2026 12:52:27 | INFO    | +------------------+--------------------------------------------------------------+
+08-Jun-2026 12:52:27 | INFO    | ==============================================================================

@@ -1,0 +1,15 @@
+** sch_path: /home/boudi/PSESI/OTA.sch
+.subckt TOP VDD Vmoins Vplus Vout GND
+*.PININFO Vmoins:I Vplus:I VDD:I GND:I Vout:O
+MM3 net1 net4 GND GND sg13_lv_nmos w=2.5u l=0.5u ng=1
+MM2.1 net2 Vmoins net1 GND sg13_lv_nmos w=2.5u l=0.5u ng=2
+MM2.2 net3 Vplus net1 GND sg13_lv_nmos w=2.5u l=0.5u ng=2
+MM1.1 net2 net2 VDD VDD sg13_lv_pmos w=2.5u l=0.5u ng=1
+MM1.2 net3 net2 VDD VDD sg13_lv_pmos w=2.5u l=0.5u ng=1
+MM4 Vout net4 GND GND sg13_lv_nmos w=3.0u l=1.6u ng=2
+MM5 Vout net3 VDD VDD sg13_lv_pmos w=4.0u l=0.5u ng=2
+CC2 net3 Vout cap_cmim w=10.0e-6 l=10.0e-6
+MM1 net4 net4 GND GND sg13_lv_nmos w=8.0u l=0.5u ng=4
+MM2 net4 net4 VDD VDD sg13_lv_pmos w=1.8u l=0.5u ng=1
+.ends
+.GLOBAL GND

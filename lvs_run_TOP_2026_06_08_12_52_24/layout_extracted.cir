@@ -1,0 +1,23 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 08/06/2026 12:52
+
+.SUBCKT TOP GND Vout Vmoins Vplus VDD
+M$1 GND \$2 Vout GND sg13_lv_nmos L=1.6u W=3u AS=0.795p AD=0.795p PS=5.56u
++ PD=5.56u rfmode=0
+M$3 \$2 \$2 GND GND sg13_lv_nmos L=0.5u W=8u AS=1.82p AD=1.82p PS=11.82u
++ PD=11.82u rfmode=0
+M$7 GND \$2 \$5 GND sg13_lv_nmos L=0.5u W=2.5u AS=0.85p AD=0.85p PS=5.68u
++ PD=5.68u rfmode=0
+M$8 \$5 Vmoins \$11 GND sg13_lv_nmos L=0.5u W=2.5u AS=0.6625p AD=0.6625p
++ PS=4.81u PD=4.81u rfmode=0
+M$10 \$5 Vplus \$3 GND sg13_lv_nmos L=0.5u W=2.5u AS=0.6625p AD=0.6625p
++ PS=4.81u PD=4.81u rfmode=0
+M$12 \$2 \$2 VDD VDD sg13_lv_pmos L=0.5u W=1.8u AS=0.612p AD=0.612p PS=4.28u
++ PD=4.28u rfmode=0
+M$13 \$11 \$11 VDD VDD sg13_lv_pmos L=0.5u W=2.5u AS=0.85p AD=0.85p PS=5.68u
++ PD=5.68u rfmode=0
+M$14 \$3 \$11 VDD VDD sg13_lv_pmos L=0.5u W=2.5u AS=0.85p AD=0.85p PS=5.68u
++ PD=5.68u rfmode=0
+M$15 VDD \$3 Vout VDD sg13_lv_pmos L=0.5u W=4u AS=1.06p AD=1.06p PS=7.06u
++ PD=7.06u rfmode=0
+C$17 \$3 Vout cap_cmim w=10u l=10u A=100p P=40u m=1
+.ENDS TOP
