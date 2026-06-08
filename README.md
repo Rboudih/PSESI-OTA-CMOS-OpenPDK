@@ -2,6 +2,7 @@
   <img src="images/logo_Sorbonne.png" height="60"/>
   <img src="images/logo_LIP6.png" height="60"/>
 </p>
+
 # PSESI — Conception d'un OTA CMOS dans un flot open source
  
 M1 SESI · Sorbonne Université · 2025–2026  
@@ -103,6 +104,12 @@ alias magic="magic -rcfile $PDK_ROOT/$PDK/libs.tech/magic/ihp-sg13g2.magicrc"
 > Ngspice doit être compilé avec `--enable-osdi` pour charger les modèles générés par OpenVAF.
  
 ---
+
+## Rapport
+
+Le rapport complet est disponible [ici](PSESI_rapport.pdf).
+
+ ---
  
 ## Références
  
