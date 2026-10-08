@@ -62,6 +62,7 @@ Le second étage est un amplificateur à source commune permettant d'obtenir la 
 Une capacité de compensation de Miller est utilisée pour améliorer la stabilité du circuit.
 
 Le circuit de polarisation génère directement la tension de polarisation à partir de l’alimentation.
+
 ![Schéma de l’OTA sous Xschem](images/OTA.png)
 
 ---
@@ -71,9 +72,11 @@ Le circuit de polarisation génère directement la tension de polarisation à pa
 Après la conception du schéma, plusieurs simulations ont été réalisées sous Ngspice afin de vérifier le fonctionnement du circuit.
 
 Le point de fonctionnement obtenu donne une tension de sortie d'environ 0,607 V pour une alimentation de 1,2 V, proche de la moitié de l'alimentation.
+
 ![Réponse temporelle de l’OTA](images/simulatontempngspice.png)
 
 La simulation fréquentielle donne un gain basse fréquence d'environ 55 dB et une fréquence de coupure d’environ 80kHz.
+
 ![Diagramme de Bode de l'OTA](images/simulatonACngspice.png)
 
 --- 
@@ -83,6 +86,7 @@ La simulation fréquentielle donne un gain basse fréquence d'environ 55 dB et u
 Une fois le schéma validé, le layout de l’OTA a été réalisé sous KLayout.
 
 Les transistors et les interconnexions ont été placés manuellement en respectant les règles de dessin du PDK. Une attention particulière a été portée à la symétrie des branches différentielles afin de limiter les effets de mismatch.
+
 ![Layout complet de l’OTA](images/layout.png)
 
 ---
@@ -92,9 +96,11 @@ Les transistors et les interconnexions ont été placés manuellement en respect
 Le layout a été vérifié avec les outils du PDK :
 
 - **DRC (Design Rule Check)** : validé sans erreurs
+  
 ![DRC validé](images/DRC.png)
 
 - **LVS (Layout Versus Schematic)** : validé
+  
 ![LVS validé](images/LVS.png)
 
 ---
@@ -106,6 +112,7 @@ Après validation du layout, les résistances et capacités parasites introduite
 Le circuit extrait a ensuite été simulé sous Ngspice afin de comparer son comportement avec celui obtenu avant le layout.
 
 La comparaison pré-layout / post-layout montre un comportement très proche dans la bande de fonctionnement étudiée. Les différences deviennent principalement visibles aux très hautes fréquences.
+
 ![Comparaison pré/post-layout](images/pre%26postlayout.png)
 
 ## Résultats principaux
