@@ -71,10 +71,10 @@ Le circuit de polarisation génère directement la tension de polarisation à pa
 Après la conception du schéma, plusieurs simulations ont été réalisées sous Ngspice afin de vérifier le fonctionnement du circuit.
 
 Le point de fonctionnement obtenu donne une tension de sortie d'environ 0,607 V pour une alimentation de 1,2 V, proche de la moitié de l'alimentation.
-![Réponse temporelle de l’OTA](images/simulation%20temp%20ngspice.png)
+![Réponse temporelle de l’OTA](images/simulationtempngspice.png)
 
 La simulation fréquentielle donne un gain basse fréquence d'environ 55 dB et une fréquence de coupure d’environ 80kHz.
-![Diagramme de Bode de l’OTA](images/simulation%20AC%20ngspice.png)
+![Diagramme de Bode de l’OTA](images/simulationACngspice.png)
 
 --- 
 
