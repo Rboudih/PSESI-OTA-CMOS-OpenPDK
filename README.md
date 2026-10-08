@@ -71,10 +71,10 @@ Le circuit de polarisation génère directement la tension de polarisation à pa
 Après la conception du schéma, plusieurs simulations ont été réalisées sous Ngspice afin de vérifier le fonctionnement du circuit.
 
 Le point de fonctionnement obtenu donne une tension de sortie d'environ 0,607 V pour une alimentation de 1,2 V, proche de la moitié de l'alimentation.
-![Réponse temporelle de l’OTA](images/simulationtempngspice.png)
+![Réponse temporelle de l’OTA](images/simulatontempngspice.png)
 
 La simulation fréquentielle donne un gain basse fréquence d'environ 55 dB et une fréquence de coupure d’environ 80kHz.
-![Diagramme de Bode de l’OTA](images/simulationACngspice.png)
+![Diagramme de Bode de l'OTA](images/simulatonACngspice.png)
 
 --- 
 
@@ -92,10 +92,9 @@ Les transistors et les interconnexions ont été placés manuellement en respect
 Le layout a été vérifié avec les outils du PDK :
 
 - **DRC (Design Rule Check)** : validé sans erreurs
-- **LVS (Layout Versus Schematic)** : validé
-
 ![DRC validé](images/DRC.png)
 
+- **LVS (Layout Versus Schematic)** : validé
 ![LVS validé](images/LVS.png)
 
 ---
@@ -107,7 +106,7 @@ Après validation du layout, les résistances et capacités parasites introduite
 Le circuit extrait a ensuite été simulé sous Ngspice afin de comparer son comportement avec celui obtenu avant le layout.
 
 La comparaison pré-layout / post-layout montre un comportement très proche dans la bande de fonctionnement étudiée. Les différences deviennent principalement visibles aux très hautes fréquences.
-![Comparaison pré/post-layout](pre&postlayout/layout.png)
+![Comparaison pré/post-layout](images/pre%26postlayout.png)
 
 ## Résultats principaux
  
